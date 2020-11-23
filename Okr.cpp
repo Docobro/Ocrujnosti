@@ -15,6 +15,7 @@ int main(){
     inputCoor >> y1;
     inputCoor >> x2;
     inputCoor >> y2;
+    inputCoor.close();
     cout << "First coordinate: " << x1 << " " << y1 << endl;
     cout << "Second coordinate: " << x2 << " " << y2 << endl;
         const float e = 10e-8;
@@ -39,8 +40,8 @@ int main(){
         cout << "Intersections: " << count;
 
 
-    inputCoor.close();
     ofstream outputCount("output.txt");
     outputCount << count;
+    outputCount.close();
     return 0;
 }
