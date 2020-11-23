@@ -7,7 +7,6 @@ using namespace std;
 
 int main(){
     setlocale(LC_ALL, "rus");
-    // без понятия почему после этой строчки все еще не работает ру язык.
     double x1, y1, x2, y2;
     double a, b, c;
 
@@ -38,9 +37,10 @@ int main(){
             count = 0;
         }
         cout << "Intersections: " << count;
-        return 0;
+
 
     inputCoor.close();
     ofstream outputCount("output.txt");
     outputCount << count;
+    return 0;
 }
